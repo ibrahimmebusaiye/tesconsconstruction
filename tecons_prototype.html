@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECONS Construction Company | Freetown, Sierra Leone</title>
+<meta name="description" content="TECONS Construction Company — professional construction and engineering services in Freetown, Sierra Leone.">
+<style>
+:root{
+  --navy:#0b1728; --blue:#1457d9; --orange:#f59e0b; --light:#f5f7fb;
+  --text:#172033; --muted:#64748b; --white:#fff; --line:#e5eaf1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--navy);color:#dbe5f2;font-size:13px;padding:9px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.5px}
+.logo-mark{width:42px;height:42px;border-radius:10px;background:var(--navy);position:relative;overflow:hidden}
+.logo-mark:before{content:"";position:absolute;left:7px;bottom:7px;width:28px;height:20px;border-left:5px solid var(--orange);border-top:5px solid var(--orange);transform:skew(-25deg)}
+.logo-mark:after{content:"";position:absolute;right:5px;top:7px;width:19px;height:5px;background:var(--blue);box-shadow:0 9px 0 var(--blue)}
+.logo span{color:var(--blue)}
+.links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:700}
+.links a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:8px;font-weight:800;border:1px solid transparent;transition:.2s}
+.btn-primary{background:var(--orange);color:#111827}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px #f59e0b35}
+.btn-dark{background:var(--navy);color:#fff}.btn-outline{border-color:#fff;color:#fff}
+.menu{display:none;border:0;background:none;font-size:26px}
+.hero{min-height:650px;background:
+linear-gradient(90deg,rgba(5,16,31,.96) 0%,rgba(5,16,31,.83) 48%,rgba(5,16,31,.30) 100%),
+url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=85") center/cover;
+display:flex;align-items:center;color:#fff}
+.hero-content{max-width:760px;padding:90px 0}
+.eyebrow{color:var(--orange);font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:16px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2px;margin-bottom:22px}
+.hero p{font-size:19px;color:#d8e0ea;max-width:650px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.trust{margin-top:55px;display:flex;gap:28px;flex-wrap:wrap}
+.trust strong{display:block;font-size:24px;color:#fff}.trust span{font-size:12px;color:#aeb9c8}
+.section{padding:95px 0}.section.alt{background:var(--light)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}
+.section-head h2{font-size:42px;line-height:1.1;letter-spacing:-1px}.section-head p{max-width:520px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{padding:30px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.05)}
+.icon{width:52px;height:52px;border-radius:12px;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;font-size:24px;margin-bottom:20px}
+.card h3{font-size:21px;margin-bottom:9px}.card p{color:var(--muted);font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-img{min-height:480px;border-radius:22px;background:url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85") center/cover;position:relative}
+.about-img .badge{position:absolute;bottom:25px;left:25px;background:#fff;padding:18px 20px;border-radius:14px;box-shadow:0 15px 35px #0002}
+.about h2{font-size:45px;line-height:1.1;margin-bottom:18px}.about p{color:var(--muted);margin-bottom:18px}
+.checks{display:grid;gap:12px;margin:25px 0}.check{display:flex;gap:10px;font-weight:700}.check b{color:var(--orange)}
+.projects{display:grid;grid-template-columns:1.3fr .7fr;gap:22px}
+.project{min-height:360px;border-radius:20px;overflow:hidden;position:relative;background-size:cover;background-position:center;color:#fff}
+.project:nth-child(1){background-image:linear-gradient(0deg,#07111eea,#07111e11),url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85")}
+.project:nth-child(2){background-image:linear-gradient(0deg,#07111eea,#07111e11),url("https://images.unsplash.com/photo-1590725121839-892b458a74fe?auto=format&fit=crop&w=1000&q=85")}
+.project:nth-child(3){background-image:linear-gradient(0deg,#07111eea,#07111e11),url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=85")}
+.project:nth-child(4){background-image:linear-gradient(0deg,#07111eea,#07111e11),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85")}
+.project-content{position:absolute;bottom:25px;left:25px;right:25px}.project h3{font-size:25px}.project small{color:#dbe5f2}
+.project.big{grid-row:span 2;min-height:742px}
+.contact{background:var(--navy);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.contact h2{font-size:46px;line-height:1.1;margin-bottom:16px}.contact p{color:#b8c3d2}
+.contact-info{margin-top:30px;display:grid;gap:15px}.contact-item{display:flex;gap:14px}.contact-item b{color:var(--orange)}
+.form{background:#fff;color:var(--text);padding:30px;border-radius:18px}.form h3{margin-bottom:20px;font-size:24px}
+input,textarea,select{width:100%;padding:14px 15px;border:1px solid #d8dee8;border-radius:8px;margin-bottom:13px;font:inherit}textarea{min-height:125px;resize:vertical}
+.footer{background:#07101d;color:#93a1b3;padding:25px 0;font-size:13px}.footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){
+ .links{display:none}.menu{display:block}.hero{min-height:610px}
+ .cards,.about,.contact-grid{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.project.big{grid-row:auto;min-height:420px}
+ .section{padding:70px 0}.section-head{display:block}.section-head h2{margin-bottom:15px}
+ .about-img{min-height:380px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Freetown, Sierra Leone</span><span>Professional Construction & Engineering</span></div></div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="#"><div class="logo-mark"></div><div>TECONS<span>.</span><br><small style="font-size:9px;color:#64748b;letter-spacing:1.5px">CONSTRUCTION</small></div></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a class="btn btn-dark" href="tel:+23279505362">Call Us</a>
+    </div>
+    <button class="menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+ <div class="container"><div class="hero-content">
+   <div class="eyebrow">TECONS.SL.LTD · Freetown</div>
+   <h1>Building with precision. Delivering with confidence.</h1>
+   <p>TECONS Construction Company is a professional construction and engineering company committed to delivering high-quality, reliable and cost-effective building solutions across Sierra Leone.</p>
+   <div class="actions"><a class="btn btn-primary" href="#contact">Request a Consultation</a><a class="btn btn-outline" href="#services">Explore Services</a></div>
+   <div class="trust"><div><strong>Quality</strong><span>Built to last</span></div><div><strong>Reliable</strong><span>Professional delivery</span></div><div><strong>Cost-effective</strong><span>Value-driven solutions</span></div></div>
+ </div></div>
+</header>
+
+<section class="section" id="services">
+ <div class="container">
+  <div class="section-head"><h2>Construction solutions<br>for real-world needs.</h2><p>From residential buildings to commercial and civil works, our service structure is designed to communicate capability, professionalism and dependable execution.</p></div>
+  <div class="cards">
+   <div class="card"><div class="icon">⌂</div><h3>Residential Construction</h3><p>Thoughtful building solutions for homes, extensions and residential developments.</p></div>
+   <div class="card"><div class="icon">▦</div><h3>Commercial Construction</h3><p>Professional construction services for offices, business premises and commercial spaces.</p></div>
+   <div class="card"><div class="icon">⚙</div><h3>Civil Construction</h3><p>Practical civil works delivered with attention to quality, safety and project requirements.</p></div>
+   <div class="card"><div class="icon">⌁</div><h3>Engineering Solutions</h3><p>Engineering-focused support that connects planning, technical thinking and construction.</p></div>
+   <div class="card"><div class="icon">✓</div><h3>Project Delivery</h3><p>Clear coordination from early planning through execution and final handover.</p></div>
+   <div class="card"><div class="icon">◫</div><h3>Renovation & Improvement</h3><p>Upgrade, repair and transformation solutions for existing properties and spaces.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section alt" id="about">
+ <div class="container about">
+  <div class="about-img"><div class="badge"><b>TECONS.SL.LTD</b><br><span>Freetown, Sierra Leone</span></div></div>
+  <div><div class="eyebrow">About TECONS</div><h2>We turn construction plans into lasting spaces.</h2>
+   <p>TECONS Construction Company is positioned as a professional construction and engineering partner for clients who value dependable workmanship, practical solutions and cost-conscious delivery.</p>
+   <p>This prototype intentionally uses only the company information visible in the supplied Google Business Profile, while leaving room to add verified company history, completed projects, team details and certifications later.</p>
+   <div class="checks"><div class="check"><b>✓</b> Quality-focused workmanship</div><div class="check"><b>✓</b> Reliable project delivery</div><div class="check"><b>✓</b> Cost-effective building solutions</div><div class="check"><b>✓</b> Residential, commercial & civil construction</div></div>
+   <a class="btn btn-dark" href="#contact">Talk to TECONS</a>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="projects">
+ <div class="container">
+  <div class="section-head"><h2>Built for a stronger Sierra Leone.</h2><p>Use this section for verified TECONS project photography and case studies. The current visuals are generic construction imagery for prototype presentation only.</p></div>
+  <div class="projects">
+   <div class="project big"><div class="project-content"><small>PROJECT SHOWCASE</small><h3>Commercial & Institutional Construction</h3><p>Replace with a verified TECONS project case study.</p></div></div>
+   <div class="project"><div class="project-content"><small>PROJECT SHOWCASE</small><h3>Residential Development</h3></div></div>
+   <div class="project"><div class="project-content"><small>PROJECT SHOWCASE</small><h3>Civil Works</h3></div></div>
+   <div class="project"><div class="project-content"><small>PROJECT SHOWCASE</small><h3>Renovation & Improvement</h3></div></div>
+ </div>
+ </div>
+</section>
+
+<section class="section contact" id="contact">
+ <div class="container contact-grid">
+  <div><div class="eyebrow">Start a project</div><h2>Let’s build something solid.</h2><p>Tell us what you are planning and the TECONS team can discuss the next step with you.</p>
+   <div class="contact-info">
+    <div class="contact-item"><b>PHONE</b><span><a href="tel:+23279505362">+232 79 505362</a></span></div>
+    <div class="contact-item"><b>OFFICE</b><span>W Brook St, Freetown, Sierra Leone</span></div>
+    <div class="contact-item"><b>STATUS</b><span>Open · Closes 5:00 PM</span></div>
+   </div>
+  </div>
+  <form class="form" onsubmit="event.preventDefault();alert('Thanks! Your enquiry form is ready to connect to a backend or WhatsApp workflow.');">
+   <h3>Request a quote</h3><input required placeholder="Full name"><input required type="email" placeholder="Email address"><input placeholder="Phone number"><select><option>Select service</option><option>Residential Construction</option><option>Commercial Construction</option><option>Civil Construction</option><option>Engineering Solutions</option><option>Renovation</option></select><textarea placeholder="Tell us about your project"></textarea><button class="btn btn-primary" style="width:100%;border:0;cursor:pointer">Send Enquiry</button>
+  </form>
+ </div>
+</section>
+
+<footer class="footer"><div class="container"><span>© 2026 TECONS.SL.LTD. All rights reserved.</span><span>Construction · Engineering · Freetown, Sierra Leone</span></div></footer>
+</body>
+</html>
